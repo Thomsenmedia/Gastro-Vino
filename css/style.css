@@ -1,0 +1,1615 @@
+
+
+/* --- --- Typografi --- --- */
+h1{
+    font-size: 56px;
+    font-family: 'Antic Didone';
+    color: #9C0C21;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 40px;
+    font-family: 'Antic Didone';
+    color: #9C0C21;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+h3{
+    text-transform: uppercase;
+    font-family: 'Antic Didone';
+    font-size: 22px;
+    margin-bottom: 3vh;
+}
+h4{
+    font-size: 32px;
+    font-family: 'Antic Didone';
+    color: #9C0C21;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+h6{
+    font-size: 50px;
+    font-family: 'montserrat';
+    color: #9C0C21;
+    margin-top: 2vh;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #9C0C21;
+}
+p{
+    font-family: 'montserrat';
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    line-height: 35px;
+}
+.p_bold{
+    font-weight: 600;
+}
+.p_italic{
+    font-style: italic;
+}
+.p_italic_light{
+    font-style: italic;
+    font-weight: 200;
+}
+.p_2{
+    font-size: 20px;
+}
+.p_3{
+    font-size: 18px;
+}
+
+hr{
+    border: 0.9px solid #000;
+}
+
+/* --- --- Knapper --- --- */
+.button{
+    font-family: 'scope one';
+    text-transform: uppercase;
+    color: #9C0C21;
+    font-size: 24px;
+
+    border: 2px solid #9C0C21;
+    padding: 0.5vw 2vw 0.3vw;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #9C0C21;
+    color: #fff;
+
+    transition: 0.25s ease-in-out;
+}
+
+
+.margin_header{
+    width: 100%;
+    height: 20dvh;
+}
+/* --- --- HEADER --- --- */
+header{
+    width: 100%;
+    height: 20dvh;
+    position: fixed;
+    background-color: rgb(250, 244, 230, 0.97);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Antic Didone';
+    font-size: 18px;
+    letter-spacing: 2px;
+
+    border-bottom: 1px solid #000;
+
+    z-index: 1000;
+}
+
+    .header_logo{
+        width: 10vw;
+        min-width: 170px;
+    }
+
+    #active{
+        color: #9C0C21;
+    }
+
+        .menu_links ul{
+            text-transform: uppercase;
+            list-style-type: none;
+            display: flex;
+            width: 80vw;
+            justify-content: space-between; 
+            
+            margin-top: 4vh;
+        }
+
+
+            .arrow_red{
+                display: none;
+            }
+
+            .menu_links a{
+                text-decoration: none;
+                color: #000;
+            }
+            .menu_links a:hover{
+                color: #9C0C21;
+            }
+
+    /*får pilende til at være sammen med teksten samt blive rød*/
+    .menu_dropdown{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .menu_dropdown img{
+            width: 15px;
+            margin-left: 0.5vw;
+            height: fit-content;
+        }
+
+    .menu_dropdown:hover .arrow_black{
+        display: none;
+    }
+    .menu_dropdown:hover .arrow_red{
+        display: inline;
+    }
+    .menu_dropdown:hover li a{
+        color: #9C0C21;
+    }
+
+    
+    /*Styler dropdownmenuen*/
+    .container_dropdown{
+        display: none;
+    }
+    .menu_dropdown:hover .container_dropdown{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 15dvh;
+        z-index: -1;
+
+        background-color: rgb(250, 244, 230, 0.97);
+        padding: 2vw 1vw 0;
+    }
+        .container_dropdown a{
+            margin: 0.5vw 0 1.5vw;
+            text-transform: capitalize;
+        }
+
+/*burgermenu*/
+#open_menu{
+    display: none;
+}
+#close_menu{
+    display: none;
+}
+#burgermenu{
+    display: none;
+}
+
+/* ---  MAIN --- */
+main{
+    background-color: #FAF4E6;
+}
+
+
+/* --- --- Forside --- --- */
+/* Forsidebanneret */
+.frontpage_banner{
+    display: flex;
+}
+    .frontpage_banner img{
+        width: 50vw;
+        height: 80dvh;
+        object-fit: cover;
+    }
+    .frontpage_banner_textsection{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 10vh;
+    }
+    .frontpage_banner_textsection h1{
+        width: 24vw;
+        line-height: 80px;
+        text-align: center;
+    }
+    .frontpage_banner_textsection img{
+        width: auto;
+        height: 7vw;
+        margin: 4vh 0;
+        max-width: 8vw;
+        object-fit: contain;
+    }
+    .frontpage_banner_textsection hr{
+        width: 40vw;
+
+    }
+#ill_fp{
+    transition: opacity 0.7s ease-in-out;
+    opacity: 1;
+}
+
+
+/* Teamcooking section */
+.teamcooking_frontpage{
+    margin: 3vw 4vw 5vw 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .teamcooking_frontpage p{
+        width: 29vw;
+        margin: 3vh 0 6vh;
+    }
+    .teamcooking_frontpage img{
+        width: 40vw;
+        height: 37vw;
+        object-fit: cover;
+    }
+
+.tc_img_ill{
+    display: flex;
+    justify-content: center;
+}
+    .tc_img_ill img{
+        width: 60vw;
+        height: 25vw;
+        object-fit: cover;
+    }
+
+    #icon_tc_fp{
+        position: absolute;
+        height: 15vw;
+        width: auto;
+        margin-top: 5vw;  
+        right: 5vw;
+}
+
+
+
+/* --- Valid Karussel --- */
+.container_valid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+#valid{
+    padding-top:2vw;
+    position:relative;
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+    #valid img{
+        height: 5vw;
+        max-width: 14vw;
+        object-fit: contain;
+    }
+
+    #next{
+        position: absolute;
+        right: 9vw;
+        margin-top: 6vw;
+        height: 3vw;
+        cursor: pointer;
+    }
+    #previous{
+        position: absolute;
+        left: 9vw;
+        margin-top: 6vw;
+        height: 3vw;
+        cursor: pointer;
+    }
+    .container_valid hr{
+        width: 90vw;
+        margin-top: 10vh;
+    }
+
+/* - Animation karussel - */
+/* Til næsteknappen */
+@keyframes slideNextOut{
+    from{left:0vw;}
+    to{left:-105vw;}
+}
+@keyframes slideNextin{
+    from{right:-105vw;}
+    to{right:0vw;}
+}
+
+/* til forrigeknappen */
+@keyframes slidePreviousOut{
+    from{right:0vw;}
+    to{right:-105vw;}
+}
+@keyframes slidePreviousin{
+    from{left:-105vw;}
+    to{left:0vw;}
+}
+
+
+/* --- Vin sektion --- */
+.wine_frontpage{
+    display: block;
+}
+    .wine_fp_text{
+        margin: 5vw 8vw 0 5vw;
+        display: flex;
+        align-items: center;
+    }
+        .wine_fp_text div{
+            margin: -18vw 0 0 10vw;
+        }
+            .wine_frontpage p{
+                width: 29vw;
+                margin: 3vh 0 6vh;
+            }
+            .wine_frontpage img{
+                width: 41vw;
+                height: 60vw;
+                object-fit: cover;
+            }
+
+    .wine_img_ill{
+        margin: -21vw 5vw 0 8vw;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+
+        padding-bottom: 5vw;
+    }
+        .wine_img_ill img{
+            width: 43vw;
+            height: 25vw;
+            object-fit: cover;
+        }
+        #ill_wine_fp{
+            height: 27vw;
+            width: auto;
+            margin-right: 18vw;
+        }
+
+
+
+
+
+
+/* --- --- Undersider fælles --- --- */
+.pages_header_ill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 0;
+}
+    .pages_header_ill img{
+        height: 5.2vw;
+        margin-top: 5vh;
+    }
+    /*Til 404 siden*/
+.pages_header_ill_404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 0;
+}
+    .pages_header_ill_404 h1{
+        text-align: center;
+        line-height: 80px;
+    }
+    .pages_header_ill_404 img{
+        height: 8vw;
+        margin: 5vh 0 8vh;
+    }
+
+
+
+
+
+/* --- --- Teamcooking --- --- */
+/* Koncetpt sektion */
+.tc_concept{
+    display: flex;
+    margin: 5vw 8vw 0 5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+    .tc_concept img{
+        width: 34vw;
+        height: 47vw;
+        object-fit: cover;
+    }
+    .tc_concept div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40vw;
+    }
+        .tc_concept p{
+            margin-top: 5vh;
+        }
+
+
+/* Priser sektion*/
+.tc_prices{
+    display: flex;
+    margin: 5vw 5vw 0 8vw;
+    align-items: center;
+    justify-content: space-between;
+}
+    .tc_prices img{
+        width: 43vw;
+        height: 34vw;
+        object-fit: cover;
+    }
+        .tc_prices_text{
+            margin: 5vh 0 8vh;
+            width: 35vw;
+        }
+            .tc_prices_text ul{
+                margin-left: 1vw;
+            }
+
+/* Citat sektion */
+.quote_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 0;
+}
+    .quote_container hr{
+        width: 90vw;
+    }
+    .quote_container img{
+        width: 5vw;
+        margin-top: 10vh;
+    }
+    .quote_container h2{
+        text-align: center;
+        width: 50vw;
+        margin: 5vh 0 10vh;
+        text-transform: none;
+        line-height: 60px;
+    }
+    #h2_quote {
+        transition: opacity 0.7s ease-in-out; /* overgangseffekt */
+        opacity: 1; /* Sørger for at citatet starter synligt */
+    }
+    
+/* Aftenens forløb */
+.schedule_h2{
+    margin: 5vw 8vw 0;
+}
+
+.schedule{
+    display: flex;
+    margin: 5vw 8vw;
+    justify-content: space-between;
+}
+    .schedule div{
+        width: 35vw;
+    }
+        .schedule p{
+            margin: 1vh 0;
+        }
+    .schedule_btn{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 6vw;
+    }
+
+
+
+
+/* --- --- Vine med sjæl --- --- */
+/* Splashscreen */
+.wine_text_center{
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .wine_text_center img{
+        width: 2vw;
+        margin-top: 3vh;
+        padding-bottom: 7vh;
+        cursor: pointer;
+    }
+
+/* "kortene" */
+.container_wine_cards{
+    display: flex;
+}
+
+
+.section_wine{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+    .section_wine img{
+        height: 60vh;
+        margin-bottom: 6vh;
+    }
+    .section_wine h2{
+        margin-bottom: 3vh;
+    }
+
+
+
+
+.grape{
+    width: 33vw;
+    position: absolute;
+    left: 10vw;
+    display: flex;
+    justify-content: end;
+
+    margin-bottom: 42vh;
+}
+    .grape img{
+        height: 25vh;
+        position: absolute;
+        left: 0;
+        top: 10vh;
+    }
+    .grape h4{
+        width: 24vw;
+    }   
+
+    .grape p{
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 1vh;
+        width: 30vw;
+        position: relative;
+        z-index: 1;
+    }
+
+.house{
+    width: 40vw;
+    position: absolute;
+    left: 7vw;
+    display: flex;
+
+    margin-bottom: 5vh;
+}
+    .house img{
+        height: 25vh;
+        position: absolute;
+        right: 0;
+        top: 6vh;
+    }
+    .house p{
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 1vh;
+        width: 30vw;
+        position: relative;
+        z-index: 1;
+    }
+    
+
+.region{
+    width: 33vw;
+    position: absolute;
+    right: 8vw;
+    display: flex;
+
+    margin-bottom: 40vh;
+}
+    .region img{
+        height: 25vh;
+        position: absolute;
+        right: 0;
+        top: 2vh;
+    }
+    .region p{
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 1vh;
+        width: 30vw;
+        position: relative;
+        z-index: 1;
+    }
+    .region a{
+        text-decoration: underline;
+        z-index: 1;
+        font-family: 'montserrat';
+        position: absolute;
+        margin-top: 1vh;
+    }
+
+
+
+.percent{
+    position: absolute;
+    right: 7vw;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 5vh;
+}
+
+    .percent p{
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 1vh;
+        width: 30vw;
+        position: relative;
+    }
+    
+      
+    
+#nebbiolo{
+    position: absolute;
+    background-color: #FAF4E6;
+}
+
+#chanti{
+    position: absolute;
+    background-color: #FAF4E6;
+    display: none;
+}
+
+
+
+/* pilene */
+#wine_previous{
+    position: absolute;
+    left: 3vw;
+    height: 6vh;
+    bottom: -47vh;
+    cursor: pointer;
+}
+#wine_next{
+    position: absolute;
+    right: 3vw;
+    height: 6vh;
+    bottom: -47vh;
+    cursor: pointer;
+}
+
+
+
+
+
+/* --- --- Vinområder --- --- */
+/*Beskrivelsen*/
+.wine_place_description{
+    width: 40vw;
+    margin: 0 auto 2vh;
+}
+/*Område sektionerne*/
+.wine_place{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 8vh;
+    padding-bottom: 10vh;
+}
+    .wine_place img{
+        height: 70vh;
+        width: 45vw;
+        object-fit: cover;
+    }
+    .wine_place p{
+        width: 40vw;
+        margin-top: 1vh;
+    }
+
+.wine_place_hr{
+    width: 90vw;
+    margin: 0 auto 10vh;
+}
+
+
+
+/* --- --- Private begivenheder --- --- */
+.container_winetasting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8vw 0 5vw;  
+    padding-bottom: 10vh;  
+}
+    .winetasting_img_container{
+        display: flex;
+        align-items: end;
+    }
+        .winetasting_img{
+            width: 35vw;
+            height: 35vw;
+            object-fit: cover;
+        }
+        .winetasting_ill{
+            height: 20vw;
+            position: absolute;
+            margin-left: 18vw;
+        }
+    
+    .winetasting_text_container{
+        width: 43vw;
+    }
+        .winetasting_text_container h2{
+            margin-bottom: 1vh;
+        }
+        .winetasting_text_container ul{
+            margin-left: 1vw;
+        }
+        .winetasting_text_container .p_italic{
+            margin-bottom: 5vh;
+        }
+
+
+
+
+
+/* --- --- Historiesiden --- --- */
+.container_history_r{
+    margin: 0 5vw 10vh 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    .container_history_r p{
+        margin-top: 2vh;
+        width: 35vw;
+    }
+    .container_history_r img{
+        width: 45vw;
+        height: 37vw;
+        object-fit: cover;
+    }
+
+.container_history_l{
+    margin: 0 8vw 10vh 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    .container_history_l p{
+        width: 35vw;
+        margin-top: 2vh;
+    }
+    .container_history_l img{
+        width: 48vw;
+        height: 32vw;
+        object-fit: cover;
+    }
+
+.history_hr{
+    width: 90vw;
+    margin-bottom: 10vh;
+}
+
+#vision_img{
+    height: 30vw;
+}
+
+.container_keywords{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8vw;
+    padding-bottom: 10vh;
+}
+    .container_keywords p{
+        width: 25vw;
+        margin-top: 1vh;
+    }
+
+
+
+
+/* --- --- booking side --- --- */
+.container_book_text{
+    margin: 0 auto 10vh;
+    width: 50vw;
+}
+
+/*Kontakt*/
+.container_book_contact{
+    display: flex;
+    margin: 0 15vw;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 11vh;
+}
+    /*Skriv besked*/
+    .container_book_contact input{
+        width: 30vw;
+        height: 6vh;
+        border: 1.5px solid;
+        border-radius: 0px;
+
+        font-size: 18px;
+        font-weight: 300;
+        font-family: 'montserrat';
+    }
+    .message_name{
+        display: flex;
+        justify-content: space-between;
+        width: 30.5vw;
+    }
+        .message_name input{
+            width: 13vw;
+        }
+    .message_mail{
+        margin-top: 4vh;
+    }
+    .message_message{
+        margin: 4vh 0 10vh;
+    }
+        .message_message input{
+            height: 20vh;
+        }
+
+
+    /*Ring*/
+    .container_call img{
+        width: 20vw;
+        margin-left: -3vw;
+    }
+
+    /*Confirmation besked*/
+    #confirmation_text{
+        color: green;
+        margin-bottom: 6vh;
+        width: 30vw;
+    }
+
+    .container_keywords h2{
+        margin-bottom: 2vh;
+    }
+
+
+
+
+
+
+
+/* --- --- FOOTER --- --- */
+footer{
+    background-color: #E7DEC9;
+    padding: 5vw 10vw;
+    border-top: 1px solid #000;
+
+    display: flex;
+    justify-content: space-between;
+}
+    .container_footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+        .img_and_p{
+            display: flex;
+            align-items: center;
+            margin-bottom: 2vh;
+        }
+            .img_and_p img{
+                height: 26px;
+                margin-right: 1.5vw;
+            }
+            .container_footer p{
+                font-size: 18px;
+            }
+
+                iframe{
+                    margin-top: 2vh;
+                }
+
+
+/* --- --- media queries --- --- */
+
+/*kun til ikonerne*/
+@media only screen and (min-width: 1025px) {
+    /*Lappeløsning fordi den går med når jeg ændre displayet i javascript, ved ikke lige hvordan det skulle virke rigtigt*/
+    #open_menu{
+        display: none !important;
+    }
+    #close_menu{
+        display: none !important;
+    }
+    #burgermenu{
+        display: none !important;
+    }
+}
+
+/*Laptops og små skærme*/
+@media only screen and (max-width: 1024px) {
+    /* --- --- header --- --- */
+
+    /*Ændre det contententet skal skubbes ned med pga. headeren*/
+    .margin_header{
+        height: 10dvh;
+    }
+    /*ændre headerens højde*/
+    header{
+        height: 10dvh;
+    }
+    /*Fjerner linksne fra menuen*/
+    .menu_links{
+        display: none;
+    }
+
+    /*syler burgermenu knappen*/
+    #open_menu{
+        width: 40px;
+        z-index: 1000;
+        cursor: pointer;
+        position:fixed;
+        right:20px;
+        top:15px;
+        display: inline;
+    }
+    #close_menu{
+        z-index: 1000;
+        cursor: pointer;
+        position:fixed;
+        width: 30px;
+        right:25px;
+        top:20px;
+        display: none;
+    
+        animation-duration:0.3s;
+        animation-fill-mode:both;
+    }
+
+    #burgermenu{
+        width:220px;
+        height: 80vh;
+        padding-top: 70px;
+        text-decoration:none;
+        font-size: 16px;
+        color: #000;
+        text-transform: uppercase;
+        padding-left: 2vw;
+    
+        position:fixed;
+        right:-300px;
+        top: 0px;
+        background-color: #FAF4E6;
+    
+        /*animation-name:runIn;*/
+        animation-duration:0.3s;
+        animation-fill-mode:both;
+    }
+
+        #burgermenu ul{
+            list-style-type: none;
+        }
+        #burgermenu li{
+            margin: 11px 0;
+        }
+        #burgermenu #last{
+            margin: 22px 0 0;
+        }
+        #burgermenu a:hover{
+            color: #9C0C21;
+        }
+
+    /* Dropdown */
+    .menu_dropdown{
+        justify-content: left;
+    }
+    .menu_dropdown:hover{
+        margin-bottom: 70px;
+    }
+        .menu_dropdown:hover .container_dropdown{
+            top: 135px;
+            z-index: 1;
+        }
+
+        .menu_dropdown:hover #number_2{
+            top: 171px;
+        }
+        .menu_dropdown img{
+            height: auto;
+        }
+    
+
+
+
+
+
+
+    /*får menuen til at komme ind når den bliver aktiveret*/
+    @keyframes runIn{
+        from{right:-300px;}
+        to{right: 0px;}
+    }
+    /*får menuen til at komme ud når den bliver deaktiveret*/
+    @keyframes runOut{
+        from{right:0px;}
+        to{right: -300px;}
+    }
+
+    /* --- tekst --- */
+    h2{
+        font-size: 38px;
+    }
+    p{
+        font-size: 20px;
+    }
+
+    /* --- knap --- */
+    .button{
+        font-size: 22px;
+        border: 1.5px solid rgb(156, 12, 33);
+    }
+
+    /* --- Forside --- */
+    .teamcooking_frontpage p{
+        width: 44vw;
+    }
+        
+    /* --- Historieside --- */
+    .container_history_r{
+        flex-direction: column;
+        margin: 0 5vw 10vh 5vw;
+    }
+    .container_history_l{
+        flex-direction: column-reverse;
+        margin: 0 5vw 10vh 5vw;
+    }
+        .container_history_r p{
+            width: 80vw;
+            margin-bottom: 5vh;
+        }
+        .container_history_r img{
+            width: 60vw;
+            height: 37vw;
+        }
+        .container_history_l p{
+            width: 80vw;
+            margin-bottom: 5vh;
+        }
+        .container_history_l img{
+            width: 60vw;
+            height: 37vw;
+        }
+
+    /* --- Book side --- */
+    .container_book_contact{
+        flex-direction: column;
+    }
+        .container_message{
+            margin-bottom: 10vh;
+        }
+        .container_book_contact input{
+            width: 50vw;
+        }
+        .message_name{
+            width: 50.5vw;
+        }
+        .message_name input{
+            width: 22vw;
+        }
+
+    /* --- Vinside --- */
+    .container_wine_cards{
+        display: none;
+    }
+    #wine_previous{
+        display: none;
+    }
+    #wine_next{
+        display: none;
+    }
+
+    .wine_text_center{
+        padding-bottom: 4vw;
+    }
+
+
+}
+
+/*Tablets og store/vertikale mobiler*/
+@media only screen and (max-width: 768px) {
+    /* --- Tekst --- */
+    h1{
+        font-size: 52px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    h4{
+        font-size: 25px;
+        line-height: 33px;
+    }
+    p{
+        font-size: 18px;
+    }
+    .p_2{
+        font-size: 18px;
+    }
+    /* --- Knap --- */
+    .button{
+        font-size: 20px;
+        padding: 1.5vw 2.5vw 1.3vw;
+    }
+    /* --- Forside --- */
+    .frontpage_banner{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .frontpage_banner img{
+        width: 75vw;
+        height: 55vh;
+        margin-bottom: 5vh;
+    }
+
+
+        .frontpage_banner_textsection{
+            margin: 0 auto 7vh;
+            width: 80vw;
+        }
+        .frontpage_banner_textsection h1{
+            width: 45vw;
+        }
+        .frontpage_banner_textsection hr{
+            width: 100%;
+        }
+        .frontpage_banner_textsection img{
+            height: 12vw;
+            max-width: 14vw;
+            width: auto;
+        }
+
+
+    .teamcooking_frontpage{
+        flex-direction: column;
+        margin: 3vw 0vw 5vw 0vw;
+    }
+        .teamcooking_frontpage p{
+            width: 70vw;
+        }
+        .teamcooking_frontpage div{
+            margin-bottom: 8vh;
+        }
+        .tc_img_ill img{
+            width: 70vw;
+            height: 35vw;
+        }
+        #icon_tc_fp{
+            margin-top: 10vw;
+        }
+
+    #valid{
+        width: 75vw;
+    }
+    #valid img{
+        height: 7vw;
+    }
+    #previous{
+        margin-top: 11vh;
+        height: 5vw;
+        left: 5vw;    
+    }
+    #next{
+        margin-top: 11vh;
+        height: 5vw;
+        right: 5vw;    
+    }
+
+    .container_valid hr{
+        margin-top: 5vh;
+    }
+
+    
+    
+    .wine_fp_text{
+        flex-direction: column-reverse;
+        margin: 5vw 0vw 0 0vw;
+    }
+        .wine_fp_text div{
+            margin: 4vh 0 10vh;
+        }
+        .wine_frontpage p{
+            width: 50vw;
+        }
+        .wine_frontpage img{
+            margin-left: -9vw;
+            width: 50vw;
+            height: 30vw;
+        }
+
+
+        .wine_img_ill{
+            margin: 4vw 5vw 0 8vw;
+        }
+        #ill_wine_fp{
+            margin-right: 2vw;
+            z-index: 1;
+        }
+
+
+    /* --- --- Teamcooking --- --- */
+    /*Header tekst*/
+    .pages_header_ill img{
+        height: 9vw;
+    }
+
+    /*Sektion 1*/
+    .tc_concept{
+        flex-direction: column-reverse;
+        margin: 5vw 5vw 0 5vw;
+    }
+        .tc_concept div{
+            width: 80vw;
+        }
+        .tc_concept p{
+            margin-top: 2vh;
+            margin-bottom: 5vh;
+        }
+        .tc_concept img{
+            width: 55vw;
+            height: 45vw;
+        }
+
+    /*Sektion 2*/
+    .tc_prices{
+        margin: 10vh 0 0 0;
+        flex-direction: column;
+    }
+        .tc_prices_text{
+            width: 80vw;
+            margin-left: 1vw;
+        }
+        .tc_prices img{
+            margin-top: 7vh;
+            width: 60vw;
+        }
+
+    /*Sek citat*/
+    .quote_container h2{
+        width: 65vw;
+        margin: 3vh 0 5vh;
+    }
+    .quote_container img{
+        width: 7vw;
+        margin-top: 5vh;
+    }
+
+    /*sektion 4*/
+    .schedule_h2{
+        margin: 5vw 5vw 0;
+    }
+    .schedule{
+        margin: 5vw;
+    }
+        .schedule div{
+            width: 43vw;
+        }
+
+    /*Aftenens forløb*/
+    .schedule_h2{
+        margin: 5vw 8vw 8vw;
+    }
+    .schedule{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+        .schedule div{
+            width: 70vw;
+        }
+        .schedule p{
+            margin: 2vh 0 5vh;
+        }
+
+        .schedule_btn{
+            padding-bottom: 10vw;
+        }
+
+
+
+
+
+
+    /*Vine med sjæl*/
+    .wine_text_center{
+        width: 60vw;
+        padding-bottom: 0vw;
+    
+    }
+    .wine_text_center img{
+        width: 4vw;
+    }
+    
+
+    /*Vinområder*/
+    /*Introteksten*/
+    .wine_place_description{
+        width: 60vw;
+    }
+
+    /*Sektion områderne*/
+    .wine_place{
+        flex-direction: column-reverse;
+        padding-bottom: 5vh;
+        margin-top: 5vh;
+    }
+        .wine_place p{
+            width: 80vw;
+            margin: 1vh 0 3vh;
+        }
+        .wine_place img{
+            width: 47vw;
+            height: 70vw;
+        }
+
+    .wine_place_hr{
+        margin: 0 auto;
+    }
+
+    #piemonte_img{
+        margin-bottom: 5vh;
+        width: 80vw;
+        height: 40vw;
+    }
+    #piemonte_p{
+        margin-bottom: 0;
+    }
+
+    /*404*/
+    .pages_header_ill_404 img{
+        height: 14vw;
+    }
+
+    /* - private arrangementer - */
+    .pages_header_ill h1{
+        text-align: center;
+        line-height: 70px;
+    }
+
+    /*Sek vinsmagning*/
+    .container_winetasting{
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+        .winetasting_text_container{
+            width: 60vw;
+            margin-bottom: 10vw;
+        }
+
+        .winetasting_img{
+            width: 60vw;
+            height: 40vw;
+        }
+        .winetasting_ill{
+            right: 12vw;
+            margin-left: 0;
+            margin-bottom: 10vw;
+        }
+
+        #vision_img{
+            height: 35vw;
+        }
+
+    /*Sek keywords*/
+    .container_keywords{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding-bottom: 5vh;
+    }
+    .container_keywords p{
+        width: 50vw;
+    }
+    .container_keywords h2{
+        margin: 4vh 0 1vh;
+    }
+
+    .container_history_r{
+        margin: 0 5vw 5vh;
+    }
+    .container_history_l{
+        margin: 0 5vw 5vh;
+    }
+
+    /*Book*/
+    .container_book_text{
+        width: 60vw;
+        margin: 0 auto 5vh;
+    }
+
+    /*Besked*/
+    .container_book_contact input{
+        width: 60vw;
+    }
+    .message_name{
+        width: 60.5vw;
+    }
+    .message_name input{
+        width: 27vw;
+    }
+    #confirmation_text{
+        width: 60vw;
+    }
+    
+    /* Histrorie */
+    .container_keywords h2{
+        width: 0vw;
+    }
+
+
+    /* --- --- Footer --- --- */
+    footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 10vw 0vw 5vw;
+    }
+        .container_footer{
+            width: 46vw;
+            margin-bottom: 5vh;
+        }
+}
+
+/*Telefoner*/
+@media only screen and (max-width: 480px) {
+    /* - Tekst - */
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h6{
+        font-size: 40px;
+    }
+
+    p{
+        line-height: 30px;
+    }
+    /* - Forside - */
+    /*Banner*/
+    .frontpage_banner_textsection h1{
+        width: 73vw;
+    }
+    .frontpage_banner_textsection img{
+        height: 14vw;
+        max-width: 16vw;
+    }
+
+    .teamcooking_frontpage img{
+        width: 50vw;
+        height: 47vw;
+    }
+    .tc_img_ill img{
+        width: 75vw;
+        height: 40vw;
+    }
+
+    /*valid*/
+    .container_valid h2{
+        text-align: center;
+        line-height: 40px;
+    }
+    #previous{
+        margin-top: 24vw;
+    }
+    #next{
+        margin-top: 24vw;
+    }
+
+    /*Sek vine*/
+    .wine_frontpage p{
+        width: 60vw;
+    }
+
+    .wine_frontpage img{
+        width: 60vw;
+        height: 40vw;
+    }
+
+    /* - Teamcooking - */
+    /*Header og ill*/
+    .pages_header_ill img{
+        height: 14vw;
+    }
+
+    /*Koncept og priser*/
+    .tc_concept img{
+        width: 65vw;
+        height: 55vw;
+    }
+
+    .tc_prices_text ul{
+        margin-left: 3vw;
+    }
+
+    .tc_prices img{
+        margin-top: 10vh;
+        width: 70vw;
+        height: 45vw;
+    }
+
+    /*Citat*/
+    .quote_container h2{
+        width: 80vw;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .quote_container img{
+        width: 10vw;
+    }
+
+    
+
+
+    /* - Vinsider - */
+
+    .winetasting_text_container ul{
+        margin-left: 3vw;
+    }
+
+
+
+    /* - Historie - */
+    .container_history_r img{
+        width: 70vw;
+        height: 45vw;
+    }
+    .container_history_l img{
+        width: 70vw;
+        height: 45vw;
+        margin-bottom: 5vw;
+    }
+
+    #vision_img{
+        width: 70vw;
+        height: 45vw;
+    }
+
+
+
+
+    /* - book - */
+    .container_book_text{
+        width: 70vw;
+    }
+
+    .message_name input{
+        width: 23vw;
+    }
+
+
+
+
+    /* - Footer - */
+    iframe{
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+
+
+
